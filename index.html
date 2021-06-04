@@ -45,29 +45,25 @@
        </div>
       
     </header>
+
+    <div class="op">
     <main class="main-page">
-    <div class="card">
+    <div class="card" id="card1">
             <img id="sorvete" src="./assets/image/sorvete.png" alt="img sorvete">
         <h2>Sorvete</h2>
-        <div class="text-card">
-            <p>Sorvetes: Leite condensado, açaí, limão, freutas cristalizadas, cupú açú, chocolate, maracujá, chocolate branco...</p>
-        </div>
+      
     </div>
-    <div class="card">
+    <div class="card" id="card2">
         <img id="hamburguer" src="./assets/image/hamburguer.png" alt="img sorvete">
         <h2>Hamburguer</h2>
-        <div class="text-card">
-            <p>Sorvetes: Leite condensado, açaí, limão, freutas cristalizadas, cupú açú, chocolate, maracujá, chocolate branco...</p>
-        </div>
     </div>
-    <div class="card">
+    <div class="card" id="card3">
         <img  id="coca" src="./assets/image/coca.png" alt="img sorvete">
         <h2>Bebidas</h2>
-        <div class="text-card">
-            <p>Sorvetes: Leite condensado, açaí, limão, freutas cristalizadas, cupú açú, chocolate, maracujá, chocolate branco...</p>
-        </div>
     </div>
 </main>
+</div>
+
 <div class="historico">
     <h1>
         30 anos de amizade
@@ -94,6 +90,17 @@
         </p>
     </div>
 </div>
+<script>
+    $('.nav a[href^="#"]').on('click', function(e) {
+	e.preventDefault();
+	var id = $(this).attr('href'),
+			targetOffset = $(id).offset().top;
+			
+	$('html, body').animate({ 
+		scrollTop: targetOffset - 100
+	}, 500);
+});
+</script>
 </body>
 
 </html>

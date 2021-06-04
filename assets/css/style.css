@@ -62,9 +62,12 @@ header img{
     display: flex;
     justify-content: center;
 }
+.op{
+    margin-right: 15%;
+    margin-left: 15%;
+}
 .main-page .card{
     overflow: hidden;
-    margin: 20px;
     margin-top: 20px;
     display: inline-block;
     text-align: center;
@@ -72,12 +75,17 @@ header img{
     width:20vw;
     box-shadow: 5px 5px 20px 5px  #D7D7D7;
 }
+
 .main-page .card:hover{
+    width: 26vw;
     height: 41vh;
 }
 #sorvete {
     padding-top: 20px;
     width: 200px;
+}
+.card1{
+
 }
 #hamburguer{
     width: 220px;
@@ -129,12 +137,26 @@ header img{
 }
 @media only screen and (max-width: 1600px) {
     .main-page .card{
+        width: 28vw;
         height: 50vh;
-        width:20vw;
+        line-height: 100px;
+        text-align: center;
+        float: left;
+        list-style: none;
+        font-weight: bold;
+        cursor: pointer;
+     -webkit-transform:scale(0.7); 
+           -moz-transform:scale(0.7); 
+            -o-transform:scale(0.7);
+               transform:scale(0.7);
+               transition-duration: 500ms;
     }
     .main-page .card:hover{
-        height: 51vh;
-        width:20vw;
+        line-height: 80px;
+            -webkit-transform:scale(1.0); 
+               -moz-transform:scale(1.0); 
+                 -o-transform:scale(1.0);
+                       transform:scale(1.0);
     }
     #sorvete {
         padding-top: 20px;
